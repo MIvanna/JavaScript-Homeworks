@@ -5,9 +5,6 @@ In every table cell print which row and column it is
 (ex. Row-3 Column-1)
 Don't forget to use google! :) */
 
-//rabote samo so odnapred stavena Value vo html, preku input ne saka
-
-
 let myForm = document.getElementById("myForm")
 
 let rowsNumberInput = document.getElementById("rows").value;
