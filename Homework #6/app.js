@@ -7,8 +7,8 @@ Don't forget to use google! :) */
 
 let myForm = document.getElementById("myForm")
 
-let rowsNumberInput = document.getElementById("rows").value;
-let columnsNumberInput = document.getElementById("columns").value;
+let rowsNumberInput = document.getElementById("rows");
+let columnsNumberInput = document.getElementById("columns");
 
 let button = document.getElementsByTagName("button")[0];
 
@@ -17,10 +17,10 @@ myForm.addEventListener("submit", function(e){
     e.preventDefault();
 
     let table = document.createElement("table")
-    for(let i = 1; i < rowsNumberInput; i++){
+    for(let i = 1; i < rowsNumberInput.value; i++){
         let tableRow = document.createElement("tr")
 
-        for(let j = 1; j < columnsNumberInput; j++){
+        for(let j = 1; j < columnsNumberInput.value; j++){
             let tableData = document.createElement("td")
             let text = document.createTextNode(`Row ${i}, Column ${j}`)
             tableData.appendChild(text)
